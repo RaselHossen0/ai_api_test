@@ -1,0 +1,62 @@
+[
+    {
+      "name": "Get User",
+      "url": "https://api.example.com/users/123",
+      "method": "GET",
+      "headers": {
+        "Authorization": "Bearer abc123"
+      },
+      "payload": {},
+      "auth": {
+        "username": "myuser",
+        "password": "mypassword"
+      },
+      "expected_status": 200
+    },
+    {
+      "name": "Create User",
+      "url": "https://api.example.com/users",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "payload": {
+        "name": "John Doe",
+        "email": "john@example.com"
+      },
+      "auth": {
+        "username": "myuser",
+        "password": "mypassword"
+      },
+      "expected_status": 201
+    },
+    {
+      "name": "Update User",
+      "url": "https://api.example.com/users/123",
+      "method": "PUT",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "payload": {
+        "name": "John Doe Updated",
+        "email": "john.doe@example.com"
+      },
+      "auth": {
+        "username": "myuser",
+        "password": "mypassword"
+      },
+      "expected_status": 200
+    },
+    {
+      "name": "Delete User",
+      "url": "https://api.example.com/users/123",
+      "method": "DELETE",
+      "headers": {},
+      "payload": {},
+      "auth": {
+        "username": "myuser",
+        "password": "mypassword"
+      },
+      "expected_status": 204
+    }
+  ]

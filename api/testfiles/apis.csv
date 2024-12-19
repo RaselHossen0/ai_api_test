@@ -1,0 +1,3 @@
+api_name,api_url,http_method
+API1,https://api1.com,GET
+API2,https://api2.com,POST

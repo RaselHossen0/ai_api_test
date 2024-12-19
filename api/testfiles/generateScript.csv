@@ -1,0 +1,5 @@
+name,url,method,headers,payload,auth,expected_status
+Get User,https://api.example.com/users/123,GET,"{'Authorization': 'Bearer abc123'}",{},"{'username': 'myuser', 'password': 'mypassword'}",200
+Create User,https://api.example.com/users,POST,"{'Content-Type': 'application/json'}","{""name"": ""John Doe"", ""email"": ""john@example.com""}","{'username': 'myuser', 'password': 'mypassword'}",201
+Update User,https://api.example.com/users/123,PUT,"{'Content-Type': 'application/json'}","{""name"": ""John Doe Updated"", ""email"": ""john.doe@example.com""}","{'username': 'myuser', 'password': 'mypassword'}",200
+Delete User,https://api.example.com/users/123,DELETE,{},"{}","{'username': 'myuser', 'password': 'mypassword'}",204

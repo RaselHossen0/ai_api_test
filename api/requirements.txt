@@ -1,0 +1,12 @@
+fastapi
+pydantic
+passlib
+pymongo
+python-jose
+uvicorn
+google.generativeai
+bcrypt
+httpx
+python-multipart
+pandas
+

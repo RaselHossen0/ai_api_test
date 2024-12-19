@@ -1,0 +1,44 @@
+[
+    {
+      "api_url": "https://api.example.com/users",
+      "http_method": "POST",
+      "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer <your_access_token>"
+      },
+      "parameters": {
+        "limit": 10,
+        "offset": 0
+      },
+      "payload": {
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "age": 32
+      }
+    },
+    {
+      "api_url": "https://api.example.com/products",
+      "http_method": "GET",
+      "headers": {
+        "Accept": "application/json"
+      },
+      "parameters": {
+        "category": "electronics",
+        "price_min": 50,
+        "price_max": 500
+      }
+    },
+    {
+      "api_url": "https://api.example.com/orders",
+      "http_method": "PUT",
+      "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer <your_access_token>"
+      },
+      "payload": {
+        "order_id": 12345,
+        "status": "shipped",
+        "tracking_number": "ABCD1234"
+      }
+    }
+  ]
